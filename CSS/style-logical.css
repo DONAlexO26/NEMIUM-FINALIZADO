@@ -1,0 +1,200 @@
+/* @font-face {
+    font-family: charter;
+    src: url(../fonts/fonts/charter-regular.otf);
+    font-style: normal;
+    font-weight: 400;
+} */
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    font-size: 16px;
+    --white40: #616161;
+    --white30: White;
+    --white20: #A5A3A5;
+    --white10: #3A3539;
+}
+
+body{
+    color: var(--white30);
+    /* font-family: charter; */
+    font-family: 'Nunito', sans-serif;
+    background: #251f24;
+    margin: 0;
+}
+
+a {
+    color: var(--white30);
+}
+
+.header {
+    position: sticky;
+    inset-block-start: -45px;
+}
+
+header{
+    font-size: 14px;
+    color: var(--white);
+    max-inline-size: 208px;
+    max-block-size: 536px;
+    line-height: 24px;
+    position: absolute;
+    margin-inline-start: -232px;
+    margin-block-start: 65px;
+}
+
+header li {
+    color: var(--white20);
+    margin-block-end: 16px;
+}
+
+header a{
+    color: var(--white20);
+    text-decoration: none;
+}
+
+nav details summary {
+    font-weight: bold;
+}
+
+ol a:hover{
+    color: var(--white30);
+}
+
+hr {
+    border: 1px solid var(--white40);
+    opacity: 0.2;
+    margin-block: 40px;
+}
+
+h1 {
+    font-size: 60px;
+    /*font-size: 3.75em;*/
+    margin-block-start: 64px;
+    margin-block-end: 16px;
+}
+
+h1,h2 {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    margin-block: 40px;
+}
+
+h3 {
+    font-size: 1,5em;
+    font-weight: 600;
+    margin-block: 16px;
+}
+
+blockquote {
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    background-color: var(--white10);
+    border-radius: 8px;
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+    padding-block-start: 24px;
+    padding-block-end: 24px;
+    margin-inline: 0;
+}
+
+blockquote p {
+    color: var(--white30);
+}
+
+blockquote span::before {
+    content: "-";
+}
+
+pre {
+    background: var(--white10);
+    overflow: auto;
+    padding: 40px;
+    border-radius: 8px
+}
+
+p { 
+    color: var(--white20);
+}
+
+.hero {
+    /* background: linear-gradient(to top,  rgba(255,255,255,0.3), transparent), url(/img/patron-1.png); */
+    background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+    height: 350px;
+    width: 100%;
+}
+
+.section-content img {
+    margin-block-start: 40px;
+    /* border: 1px solid red; */
+    display: block;
+    max-inline-size: 100%;
+}
+
+.section-content + hr {
+    display: none;
+}
+
+/* h3 {
+    counter-increment: titleList;
+}
+
+.section-content {
+    counter-reset: titleList;
+}
+
+.section-content h3::before {
+    content: counter(titleList, decimal) "." " ";
+} */
+
+/* h3::after { 
+    content: "";
+    display:inline-block;
+    width: 32px;
+    height: 4px;
+    background: var(--white30);
+}  */
+
+/* .main {
+    
+} */
+
+.wrapper {
+    max-inline-size: 902px;
+    margin: auto;
+}
+
+.main-content {
+    padding: 16px;
+}
+
+/* h1::selection {
+    background-color: red;
+    color: blue;
+} */
+
+ol p {
+    line-height: 24px;
+    margin-block: 0px;
+}
+
+#google-chrome-black {
+    display: none;
+}
+
+#vsc-black {
+    display: none;
+}
+
+#figma-black {
+    display: none;
+}
+
+#git-black {
+    display: none;
+}

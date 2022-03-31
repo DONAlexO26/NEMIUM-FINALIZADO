@@ -1,0 +1,211 @@
+/* @font-face {
+    font-family: charter;
+    src: url(../fonts/fonts/charter-regular.otf);
+    font-style: normal;
+    font-weight: 400;
+} */
+
+
+:root {
+    font-size: 16px;
+    --gray30: #212121;
+    --gray20: #212429;
+    --gray10: #616161;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    color: var(--gray30);
+    /* font-family: charter; */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+a {
+    color: var(--gray30);
+}
+
+header{
+    font-size: 14px;
+    width: 188px;
+    color: var(--gray10);
+    position: absolute;
+    top: 116px;
+    left: 958px;
+    z-index: 1;
+}
+
+header li {
+    margin-bottom: 16px;
+    
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav details summary {
+    font-weight: bold;
+    line-height: 24px;
+}
+
+header li a:hover{
+    color: white;
+    background-color: #5551FF;
+}
+
+.header {
+    position: sticky;
+    top: -100px;
+}
+
+.header-content {
+    /* border: 10px solid red; */
+    position: relative;
+}
+
+ .wrapper {
+     max-width: 902px;
+     margin-left: 116px; 
+     padding: 16px;
+ }
+
+ .main-content {
+     position: relative;
+ }
+
+h1 {
+    font-size: 60px;
+    /*font-size: 3.75em;*/
+    margin: 64px 0 16px;
+    font-weight: normal;
+}
+
+h1 + p {
+    margin-bottom: 64px;
+}
+
+hr {
+    margin: 64px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 64px 0 40px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1,5em;
+    margin: 16px 0px 24px;
+    font-weight: normal;
+   position: relative;
+   display: inline-block;
+}
+
+blockquote {
+    font-size: 24px;
+    margin: 32px 0;
+    padding-left: 16px;
+    line-height: 32px;
+    border-left: 4px solid var(--gray30);
+}
+
+blockquote span {
+    color: var(--gray20);
+}
+
+blockquote span::before{
+    content: "-";
+}
+
+pre {
+    background: #FEC62E;
+    margin: 16px 0px 40px;
+    padding: 40px;
+    font-family: "Roboto";
+    line-height: 24px;
+    overflow: auto;
+}
+
+.hero {
+    background: linear-gradient(274.51deg, rgba(74, 0, 224, 0.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url(/img/patron-2.png);
+    height: 350px;
+    width: 100%;
+}
+
+
+.section-content ol li {
+    line-height: 24px;
+    margin: 0;
+}
+
+.section-content ul li {
+    margin-bottom: 16px;
+}
+
+.section-content + hr {
+    display: none;
+}
+
+.section-content img {
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+.black-background {
+    display: block;
+}
+
+.section-content {
+    margin-top: 156px;
+}
+
+.section-content:first-of-type{
+    margin-top: 0px;
+}
+
+.section-content h3 {
+    counter-increment: titleList;
+    padding-bottom: 8px;
+}
+
+.section-content {
+    counter-reset: titleList;
+}
+
+.section-content h3::before {
+    content: counter(titleList, decimal) ". ";
+}
+
+/* h3::after { 
+    content: "";
+    display:inline-block;
+    width: 32px;
+    height: 4px;
+    background: var(--gray30);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}  */
+
+h3::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background: var(--gray30);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.white-background {
+    display: none;
+}
